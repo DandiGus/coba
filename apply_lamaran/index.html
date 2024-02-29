@@ -98,11 +98,8 @@
 </form>
 <div class="social-auth-links text-center">
 
-
-<a href="#" class="btn btn-block btn-danger">
-
-Apply
-</a>
+<div>
+<button onclick="fireSweetAlert()" class="btn btn-block btn-danger">Show sweet alert example</button>
 </div>
 
 </div>
@@ -110,7 +107,18 @@ Apply
 </div>
 </div>
 
+<script>
 
+    function fireSweetAlert() {
+        Swal.fire(
+            'Good job!',
+            'You clicked the button!',
+            'success'
+        )
+    }
+
+  </script>
+    
 <script src="https://adminlte.io/themes/v3/plugins/jquery/jquery.min.js"></script>
 
 <script src="https://adminlte.io/themes/v3/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
