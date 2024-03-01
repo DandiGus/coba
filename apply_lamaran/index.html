@@ -1,4 +1,3 @@
-
 <html lang="en"><head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -11,6 +10,8 @@
 <link rel="stylesheet" href="https://adminlte.io/themes/v3/plugins/icheck-bootstrap/icheck-bootstrap.min.css">
 
 <link rel="stylesheet" href="https://adminlte.io/themes/v3/dist/css/adminlte.min.css?v=3.2.0">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@9"></script>
+
 <script defer="" referrerpolicy="origin" src="/cdn-cgi/zaraz/s.js?z=JTdCJTIyZXhlY3V0ZWQlMjIlM0ElNUIlNUQlMkMlMjJ0JTIyJTNBJTIyQWRtaW5MVEUlMjAzJTIwJTdDJTIwUmVnaXN0cmF0aW9uJTIwUGFnZSUyMiUyQyUyMnglMjIlM0EwLjMxNjMwNTQyMDQ4OTUyMDYlMkMlMjJ3JTIyJTNBMTM2NiUyQyUyMmglMjIlM0E3NjglMkMlMjJqJTIyJTNBNjQxJTJDJTIyZSUyMiUzQTc4NCUyQyUyMmwlMjIlM0ElMjJodHRwcyUzQSUyRiUyRmFkbWlubHRlLmlvJTJGdGhlbWVzJTJGdjMlMkZwYWdlcyUyRmV4YW1wbGVzJTJGcmVnaXN0ZXIuaHRtbCUyMiUyQyUyMnIlMjIlM0ElMjIlMjIlMkMlMjJrJTIyJTNBMjQlMkMlMjJuJTIyJTNBJTIyVVRGLTglMjIlMkMlMjJvJTIyJTNBLTQyMCUyQyUyMnElMjIlM0ElNUIlNUQlN0Q="></script><script nonce="21fcc669-a1e1-461b-9158-53a106acce9d">try{(function(w,d){!function(ct,cu,cv,cw){ct[cv]=ct[cv]||{};ct[cv].executed=[];ct.zaraz={deferred:[],listeners:[]};ct.zaraz.q=[];ct.zaraz._f=function(cx){return async function(){var cy=Array.prototype.slice.call(arguments);ct.zaraz.q.push({m:cx,a:cy})}};for(const cz of["track","set","debug"])ct.zaraz[cz]=ct.zaraz._f(cz);ct.zaraz.init=()=>{var cA=cu.getElementsByTagName(cw)[0],cB=cu.createElement(cw),cC=cu.getElementsByTagName("title")[0];cC&&(ct[cv].t=cu.getElementsByTagName("title")[0].text);ct[cv].x=Math.random();ct[cv].w=ct.screen.width;ct[cv].h=ct.screen.height;ct[cv].j=ct.innerHeight;ct[cv].e=ct.innerWidth;ct[cv].l=ct.location.href;ct[cv].r=cu.referrer;ct[cv].k=ct.screen.colorDepth;ct[cv].n=cu.characterSet;ct[cv].o=(new Date).getTimezoneOffset();if(ct.dataLayer)for(const cG of Object.entries(Object.entries(dataLayer).reduce(((cH,cI)=>({...cH[1],...cI[1]})),{})))zaraz.set(cG[0],cG[1],{scope:"page"});ct[cv].q=[];for(;ct.zaraz.q.length;){const cJ=ct.zaraz.q.shift();ct[cv].q.push(cJ)}cB.defer=!0;for(const cK of[localStorage,sessionStorage])Object.keys(cK||{}).filter((cM=>cM.startsWith("_zaraz_"))).forEach((cL=>{try{ct[cv]["z_"+cL.slice(7)]=JSON.parse(cK.getItem(cL))}catch{ct[cv]["z_"+cL.slice(7)]=cK.getItem(cL)}}));cB.referrerPolicy="origin";cB.src="/cdn-cgi/zaraz/s.js?z="+btoa(encodeURIComponent(JSON.stringify(ct[cv])));cA.parentNode.insertBefore(cB,cA)};["complete","interactive"].includes(cu.readyState)?zaraz.init():ct.addEventListener("DOMContentLoaded",zaraz.init)}(w,d,"zarazData","script");})(window,document)}catch(e){throw fetch("/cdn-cgi/zaraz/t"),e;};</script></head>
 <body class="register-page" style="min-height: 570.781px;">
 <div class="register-box">
@@ -19,7 +20,7 @@
 </div>
 <div class="card">
 <div class="card-body register-card-body">
-<p class="login-box-msg">Apply Lamaran</p>
+<h3 class="login-box-msg">Apply Lamaran</h3>
 <form action="../../index.html" method="post"><p style="
     margin-bottom: 2px;
 ">Nama Lengkap</p>
@@ -73,10 +74,7 @@
 <div class="input-group-prepend">
 <span class="input-group-text"><i class="far fa-calendar-alt"></i></span>
 </div>
-<input type="date" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask="" inputmode="numeric" style="
-    border-right-width: 1.111;
-    border-left-width: 1.111;
-">
+<input type="date" class="form-control" data-inputmask-alias="datetime" data-inputmask-inputformat="dd/mm/yyyy" data-mask="" inputmode="numeric" style="border-right-width: 1.111;border-left-width: 1.111;">
 </div>
 
 </div>
@@ -106,24 +104,24 @@
 
 </div>
 </div>
-
-<script>
-
-    function fireSweetAlert() {
-        Swal.fire(
-            'Good job!',
-            'You clicked the button!',
-            'success'
-        )
-    }
-
-  </script>
     
 <script src="https://adminlte.io/themes/v3/plugins/jquery/jquery.min.js"></script>
 
 <script src="https://adminlte.io/themes/v3/plugins/bootstrap/js/bootstrap.bundle.min.js"></script>
 
 <script src="https://adminlte.io/themes/v3/dist/js/adminlte.min.js?v=3.2.0"></script>
+
+<script>
+
+    function fireSweetAlert() {
+        Swal.fire(
+            'Good job!',
+            'Lamaran Kamu berhasil dikirim',
+            'success'
+        )
+    }
+
+  </script>
 
 
 </body></html>
